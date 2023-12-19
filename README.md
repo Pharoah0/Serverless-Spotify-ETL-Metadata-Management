@@ -2,6 +2,10 @@
 
 Author: Pharoah Evelyn
 
+<p align="center">
+    <img src="https://github.com/Pharoah0/Serverless-Spotify-ETL-Metadata-Management/blob/main/images/serverless_spotify_etl_metadata_management.png" />
+</p>
+
 ## Overview
 
 #### This repository outlines the development of an ETL pipeline using Python and AWS services to obtain the artist, album, and song information from the "Discover Weekly" playlist on Spotify.
