@@ -28,10 +28,8 @@ The transformation code separates song, album, and artist metadata into subfolde
 Once processed, raw data in the /to-be-processed subfolder is moved into a processed subfolder to denote that that data has been accounted for.
 Once data arrives, a Glue crawler creates Glue Data Catalogs based on the transformed S3 Bucket zone. Once available in the data catalog, we can query with Athena.
 
-## Discoveries made
-
 ## Ways to improve this project
 
 Using different parameters, we can capture additional song details and run a deep audio analysis based on the audio features captured from the Spotify API.
 
-## Conclusions
+Gathering this enhanced data can allow Data Scientists to explore machine-learning tactics to help predict user listening patterns.
