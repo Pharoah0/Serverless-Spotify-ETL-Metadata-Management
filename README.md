@@ -22,10 +22,13 @@ I utilized the Spotify API using the Spotipy library. A jupyter notebook was dev
 
 ## Methods Used
 
-Extract the data from the API via Lambda on a weekly scheduled trigger, saving it into a raw S3 Bucket zone within a /to-be-processed subfolder.
+Extract the data from the API via Lambda function on a weekly scheduled trigger, saving it into a raw S3 Bucket zone within a `raw-data/to-be-processed` subfolder.
+
 Transform the data within the raw zone with another lambda function, then save the transformed data into a transformation S3 Bucket zone.
 The transformation code separates song, album, and artist metadata into subfolders.
-Once processed, raw data in the /to-be-processed subfolder is moved into a processed subfolder to denote that that data has been accounted for.
+
+Once processed, raw data in the `raw-data/to-be-processed` subfolder is moved into a `raw-data/processed` subfolder to denote that that data has been accounted for.
+
 Once data arrives, a Glue crawler creates Glue Data Catalogs based on the transformed S3 Bucket zone. Once available in the data catalog, we can query with Athena.
 
 ## Ways to improve this project
