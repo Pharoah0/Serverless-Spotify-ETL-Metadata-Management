@@ -69,7 +69,7 @@ def lambda_handler(event, context):
     spotify_keys = []
     for file in s3.list_objects(Bucket=Bucket, Prefix=Key)['Contents']: # Retrieves each file name within the S3 Bucket.
         file_key = file['Key']
-        if file_key.split('.')[-1] == "json": # Ommits the .json suffic on the file name
+        if file_key.split('.')[-1] == "json": # Ommits the .json suffix on the file name
             response = s3.get_object(Bucket = Bucket, Key = file_key) # Reads the file
             content = response['Body']
             jsonObject = json.loads(content.read())
