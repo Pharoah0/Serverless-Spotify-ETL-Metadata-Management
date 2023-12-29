@@ -36,3 +36,9 @@ Once data arrives, a Glue crawler creates Glue Data Catalogs based on the transf
 Using different parameters, we can capture additional song details and run a deep audio analysis based on the audio features captured from the Spotify API.
 
 Gathering this enhanced data can allow Data Scientists to explore machine-learning tactics to help predict user listening patterns.
+
+<p align="center">
+    <img src="https://github.com/Pharoah0/Serverless-Spotify-ETL-Metadata-Management/blob/main/images/0_6PV3POHQ1WxOu4rZ.jpg" />
+</p>
+
+Image for humor!
